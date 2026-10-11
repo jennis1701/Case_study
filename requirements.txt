@@ -1,0 +1,41 @@
+# ============================================================
+# Bloom's Taxonomy LLM Classifier - Python Dependencies
+# ============================================================
+# Install with:
+#   pip install -r requirements.txt
+#
+# Tested with Python 3.10 and 3.11.
+# GPU strongly recommended for Gemma 3 models > 1B parameters.
+
+# --- Core UI ---
+streamlit>=1.35.0
+
+# --- LLM / Model inference ---
+transformers>=4.41.0
+torch>=2.5.0
+accelerate>=0.30.0
+sentencepiece>=0.2.0
+protobuf>=4.25.0
+
+# --- Data handling ---
+pandas>=2.0.0
+numpy>=1.26.0
+
+# --- Evaluation metrics ---
+scikit-learn>=1.4.0
+
+# --- Configuration ---
+python-dotenv>=1.0.0
+
+# --- Optional: progress bars during tokenisation ---
+tqdm>=4.66.0
+
+# ============================================================
+# GPU / CUDA notes
+# ============================================================
+# If you have a CUDA-capable GPU, replace the torch line above
+# with the appropriate CUDA wheel, e.g.:
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+#
+# See: https://pytorch.org/get-started/locally/
+# ============================================================

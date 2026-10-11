@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Environment / secrets — NEVER commit these
+.env
+
+# Hugging Face model cache
+# (models can be very large; keep outside the repo)
+.cache/
+~/.cache/huggingface/
+
+# Experiment data and logs (can be large)
+experiments/results_log.csv
+experiments/exp*.csv
+experiments/evaluation_report.json
+data/*.csv
+data/*.xlsx
+data/*.json
+data/*.tsv
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
